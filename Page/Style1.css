@@ -8,7 +8,7 @@ body {
  font-size: 100%;
  }
 h1 {
- font-size: 350%; 
+ font-size: 200%; 
  color: navy; 
  text-align: center;
  text-shadow: 0 0 60px navy;
@@ -20,7 +20,7 @@ h2 {
  }
 p,ul,li,td {
  color: black;
-font-size: 125%; 
+font-size: 110%; 
  }
 
 a:visited {
@@ -35,7 +35,7 @@ a:hover {
 nav{
 grid-area: nav;
 background-color:#dee6e7;
-font-size: 200%	;
+font-size: 110%	;
 text-align: center;
  border-width:10px ;
  border-style:solid;
@@ -50,7 +50,7 @@ background-color:#4ad2e7;
 .partie1 {
 grid-area: p1;
 background-color:##abefff;
-font-size: 200%	;
+font-size: 100%	;
 border-width:10px ;
 border-style:solid;
 border-color:white;
@@ -59,7 +59,7 @@ padding: 10px;
 .partie2 {
 grid-area: p2;
 background-color:##abefff;
-font-size: 200%	;
+font-size: 100%	;
 border-width:10px ;
 border-style:solid;
 border-color:white;
@@ -68,7 +68,7 @@ padding: 10px;
 footer{
 grid-area: ft;
 background-color:#dee6e7;
-font-size: 200%	;
+font-size: 120%	;
 text-align: center;
  border-width:10px ;
  border-style:solid;
@@ -76,7 +76,7 @@ text-align: center;
  padding: 10px;
  color: navy;
 }
-
+@media screen and (min-width: 500px){
 .wrapper{
 display : grid;
 grid-template-columns:1fr 2fr 2fr 1fr;
@@ -87,6 +87,7 @@ grid-template-areas:
 "nav nav nav nav"
 "p1 p1 p2 p2 "
 "p1 p1 p2 p2 "
-
+"p1 p1 p2 p2 "
 "ft ft ft ft";
+}
 }
